@@ -17,5 +17,7 @@ script:
     - eye # JS
     - cd Marsagalia/c/ && make && ./xorshift # Marsagalia's XORShift algorithm
     - cd ../../ISAAC/c/ && make && ./isaac # ISAAC algorithm
+    - cd ../../ # Just going back to the repo
+    - swiftc Blum_Blum_Shub/swift/random.swift -o blum # Blum Blum Shub Swift
 notifications:
   email:                false

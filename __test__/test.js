@@ -2,7 +2,6 @@
 
 const path = require('path').normalize(__testDir + "/../")
 
-console.log(path)
 eye.describe("Marsagalia", () => {
     let marsagalia = require(path + "Marsagalia/js/random.js")
     function hasDuplicates(array) {
@@ -26,7 +25,6 @@ eye.describe("Marsagalia", () => {
 
 eye.describe("ISAAC", () => {
     let isaac = require(path + "ISAAC/js/random.js")
-    console.log(path + "ISAAC/js/random.js")
 
     function hasDuplicates(array) {
         return (new Set(array)).size !== array.length;
@@ -35,5 +33,16 @@ eye.describe("ISAAC", () => {
     eye.test("Basic test", "node",
         $ => $(isaac.random()).isCloseTo(0.7955741931218654),
 		$ => $(isaac.random()).isCloseTo(0.5542896427214146)
+    )
+})
+
+eye.describe("Blum Blum Shub", () => {
+    let blum = require(path + "Blum_Blum_Shub/js/random.js")
+	const seed = blum.seed(31775567)
+	let gen = blum.rand(seed)
+
+    eye.test("Basic test", "node",
+        $ => $(gen.next().value).Equal(36),
+        $ => $(gen.next().value).Equal(1296)
     )
 })
