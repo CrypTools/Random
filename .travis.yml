@@ -15,6 +15,7 @@ install:
     - eval "$(curl -sL https://swiftenv.fuller.li/install.sh)" # Install swift
 script:
     - eye # JS
-    - cd XORShift/c/ && make # XORShift
+    - cd Marsagalia/c/ && make && ./xorshift # Marsagalia's XORShift algorithm
+    - cd ../../ISAAC/c/ && make && ./isaac # Marsagalia's XORShift algorithm
 notifications:
   email:                false
