@@ -1,4 +1,11 @@
+/**********************************
 
+Use:
+	const h = require("./random.js")
+	let gen = h(12) // seed = 12
+	console.log(gen.next().value)
+
+**********************************/
 
 // SHA256 Lib
 
