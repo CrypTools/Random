@@ -51,8 +51,8 @@ eye.describe("HashShift", () => {
 	let HashShift = require(path + "HashShift/js/random.js")
 	let gen = HashShift(12)
 	eye.test("Basic Test", "node",
-		$ => $(gen.next().value).Equal(5),
-		$ => $(gen.next().value).Equal(30287),
-		$ => $(gen.next().value).Equal(62)
+		$ => $(gen.next().value).isCloseTo(5 / 99371),
+		$ => $(gen.next().value).isCloseTo(30287 / 99371),
+		$ => $(gen.next().value).isCloseTo(62 / 99371)
 	)
 })

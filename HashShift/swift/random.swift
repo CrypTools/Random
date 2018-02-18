@@ -224,11 +224,11 @@ class PRNG {
     init(_ s: Int) {
         self.s = s
     }
-    func rand() -> Int {
+    func rand() -> Float {
         let hash = String(self.s).sha256.prefix(10)
         let n = Int(hash, radix: 16)
         let r = (n! >> 13 * self.s) % 99371
         self.s = (r ^ n! << 2 + n!) % 70937
-        return r
+        return Float(abs(r)) / 99371
     }
 }

@@ -191,7 +191,7 @@ function* rand(seed) {
 		const n = parseInt(hash, 16)
 		let r = (n >> 13 * s) % 99371
 		s = (r ^ n << 2 + n) % 70937
-		yield Math.abs(r)
+		yield Math.abs(r) / 99371
 	}
 }
 

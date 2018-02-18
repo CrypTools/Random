@@ -42,9 +42,9 @@ And we change the `seed`:
 ```swift
 seed = (r ^ n! << 2 + n!) % 70937
 ```
-Finally we output `r`:
+Finally we output the absolute value of `r` divided by `99371` to have a number between `0` and `1`:
 ```swift
-return r
+return abs(r) / 99371
 ```
 ### Implementations
 
