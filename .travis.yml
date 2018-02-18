@@ -19,5 +19,6 @@ script:
     - cd ../../ISAAC/c/ && make && ./isaac # ISAAC algorithm
     - cd ../../ # Just going back to the repo
     - swiftc Blum_Blum_Shub/swift/random.swift -o blum # Blum Blum Shub Swift
+    - swiftc HashShift/swift/random.swift -o hash # HashShift Swift
 notifications:
   email:                false
