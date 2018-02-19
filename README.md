@@ -1,9 +1,14 @@
 # Random
-
-<!-- replace image by project Image --> ![](https://cryptools.github.io/img/Random.svg)
-
-![](https://cryptools.github.io/img/status/implemented.svg) ![](https://img.shields.io/travis/CrypTools/Random.svg) ![](https://img.shields.io/github/license/Cryptools/Random.svg) ![](https://img.shields.io/github/contributors/Cryptools/Random.svg)
-
+<p align="center">
+<!-- replace image by project Image -->
+<img height="128" src="https://cryptools.github.io/img/Random.svg">
+</p>
+<p align="center">
+<img src="https://cryptools.github.io/img/status/implemented.svg">
+<img src="https://img.shields.io/travis/CrypTools/Random.svg">
+<img src="https://img.shields.io/github/license/Cryptools/Random.svg">
+<img src="https://img.shields.io/github/contributors/Cryptools/Random.svg">
+</p>
 Random Generators for Cryptography
 
 # HashShift
