@@ -1,7 +1,7 @@
 # Random
 <p align="center">
 <!-- replace image by project Image -->
-<img height="128" src="https://cryptools.github.io/img/Random.svg">
+<img height="128" src="https://cryptools.github.io/img/random.svg">
 </p>
 <p align="center">
 <img src="https://cryptools.github.io/img/status/implemented.svg">
