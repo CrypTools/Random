@@ -46,7 +46,7 @@ let n = Int(first, radix: 16)
 Then, we rotate `n` like:
 
 ```swift
-let r = (n! >> 13 * self.s) % 99371 // for non-swift developers, 'n!' doesn't mean n factorial but the unwrapped value of n
+let r = (n! >> 13 * seed) % 99371 // for non-swift developers, 'n!' doesn't mean n factorial but the unwrapped value of n
 ```
 
 And we change the `seed`:
